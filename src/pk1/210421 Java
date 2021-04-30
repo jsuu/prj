@@ -1,0 +1,142 @@
+\\192.168.5.200
+
+설치 ...
+jdk-8u151-windows-x64.exe  
+eclipse-inst-jre-win64.exe
+
+---Java 기본데이터형--------
+정  long(64)   int(32bit)  short(16)  byte(8)       암기 lisby
+실  double(64)  float(32 int와 메모리할당량은 같지만 더큰수 가능(지수이용))
+논  boolean  ( true   false )
+
+문 char  ex)  '가',  'a',  ' ',  '@'    문자형은 1개만 허용  'ab' (x)   '  '(스페이스2개 x)
+
+---Java 참조데이터형--------
+ String 문자열형  :	      문자갯수 무관       ex)  ""  ,  "     ",    "a",   "abc"
+
+변수:  데이터를 저장하는 메모리주소
+
+--형변환 (boolean형 제외, )
+1. 자동형변환
+	double d = 100; (실수형64 <--- 정수형32)
+	int i ='a';	(정수형32 <-- 문자형16)  (*  char 형은 int형과 형변환이 가능)
+
+2. 수동/명시적 형변환   ( )사용
+int a = (int)100.0;         (정수형32 <--(int)-- 실수형64)
+char c = (char)100;
+
+System.out.println(100);	//100
+System.out.println((char)100);	// '  '
+
+산술연산자
++  -  *  /  %(모듈러스)
+
+비교연산자---
+ >   <   >=    <=    ==    !=  
+
+증감   ++  --
+
+논리연산자
+&    |     !
+
+대입연산자
+= ,  += ,  -=,  *=,  /=,  %=
+
+
+3항연산자
+(조건식)? 값1 : 값2;
+
+조건문   ---
+if(조건- true경우 실행) { } 
+
+ switch(값) {
+case 값: -----
+break;
+..default :  ----  (각 case해당되지않는값일떄)
+ }
+
+for(반복횟수 나타내는 변수초기값; 반복조건; 증감식 ){ }
+for(int i=1; i<=10; i++) { 
+	System.out.println(i);
+}
+
+
+반복문----
+for  while
+
+클래스 ScannerEx-----
+Scanner sc = new Scanner(System.in);	//System.in 키보드입력
+System.out.println("정수를 입력하세요");
+int result = sc.nextInt();		//정수를 입력받는다
+
+
+public class ScannerEx(
+
+	public static void main(String[] args){
+Scanner sc =new Scanner(System.in);
+syso("입력하시요");
+int res = sc.nextInt();
+syso(res);
+	}
+)
+
+형변환 --> 다형성
+변수선언  --> 변수선언가능
+
+연산자----산술/ 비교/ 논리/ 대입/ 증감/ 삼항 조건식?값1:값2
+제어문
+if, switch
+for, while
+
+Java 배열 []
+  int[]  String[]  double[]  boolean[]
+
+	 String name1 = "홍길동";
+	 String name1 = "홍길동2";
+
+int a;
+int[] ints;	 //배열변수 선언.  많은 변수를 선언해야할떄
+ints = new int[3];  배열변수가 가지는 갯수 설정
+
+int[] ints = new int[3];	// ints[0]  ints[1]  ints[2]
+	ints[0] = 0;	//초기값 0
+	ints[2] = 300;
+	ints[3] = 400;	// x  <-- ints[2]까지만 
+
+double[] doubles = new double[3];    //doubles[0] =0.0 //초기값          doubles[1]   doubles[2]
+
+char[] chars = new char[3];	// chars[0]	 chars[1]  chars[2]
+
+String strs = new String[3];	//strs[0] = null//초기값             strs[1]    strs[2]  
+
+for(int i=0; i< init.length; i++) {
+	ints[i] = 100;
+}
+
+for(int i = 0; i<=2;i++){
+	doubles[i] = 100.0;
+}
+
+for(int i=0; i<=2; i++) {
+	chars[i] = 'a';
+}
+for(int i=0; i<=2; i++) {
+	strs[i] = "abc";
+}
+
+String 
+int a; //비워져있는 메모리 32bit 에 a라는 이름을 할당한다
+
+String s = "j";	// s는    "j" 주소값을 가지고 있다 (참조변수)
+
+
+
+
+
+
+
+
+
+		
+
+
