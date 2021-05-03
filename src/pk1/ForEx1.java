@@ -9,10 +9,10 @@ public class ForEx1 {
 				String name = "abc";	//if문 안에서 사용
 				System.out.println(i);					
 			}
-			System.out.println(name);		//	name은 위 for문 안에서만 사용		
+	//		System.out.println(name);		//	name은 위 for문 안에서만 사용		
 			
 		}
-		System.out.println(i);		//	i는 위 for문 안에서만 사용		
+	//	System.out.println(i);		//	i는 위 for문 안에서만 사용		
 		System.out.println(a + "만큼 사랑해!");		//	a는 위 main(){ } 안에서 사용되므로		
 		
 	}
