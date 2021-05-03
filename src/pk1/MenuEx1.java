@@ -18,7 +18,7 @@ public class MenuEx1 {
 		int menuNo = sc.nextInt();
 		switch (menuNo) {
 		case 1:
-			System.out.println("학생이 등록되었습니다~");
+			System.out.println("학생이 등록되었습니다~");	
 			break;
 		case 2:
 			System.out.println(" 학생목록입니다.");
