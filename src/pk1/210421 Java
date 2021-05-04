@@ -131,18 +131,16 @@ for(int i=0; i<=2; i++) {
 //3. for()  배열을 하나씩 syso'
 
 
+참조데이터형   String 
+정수형  int a; //비워져있는 메모리 32bit 에 a라는 이름을 할당한다
+String s = "j";	// s는   "j"의 메모리 주소값을 가진다 (참조변수)
 
-String 
-int a; //비워져있는 메모리 32bit 에 a라는 이름을 할당한다
-
-String s = "j";	// s는    "j" 주소값을 가지고 있다 (참조변수)
-
-ex) 키가 160이상   나이가 40이상 인 사람을 화면에 표시하시요	
+ex) 키가 160이상이고   나이가 40이상 인 사람을 화면에 표시하시요	
 	int tall = 155;
 	int age = 44;
 	
 	if(tall>=160 & age>=40){
-		syso("키가 160이상   나이가 40이상");
+		syso("키가 160이상이고   나이가 40이상");
 	} 
 	
 ex) 좌표(50,50)에서 좌표(100,100)사이에 현재 좌표가 들어있다면
@@ -161,10 +159,50 @@ ex) 좌표(50,50)에서 좌표(100,100)사이에 현재 좌표가 들어있다면
  		2번 입력받으면 ->   학생목록입니다
  		....
  		4번 입력받으면 ....
+ 		
+ 		System.exit(0); //정상종료 . main함수를 빠져나옴.        System.exit(1); //비정상종료.
+ 		
+ ex) hello 10번 출력  for()
+ for("int i=1;i<=10;i++"){
+ 	syso("hello "+i);
+ } 		
  	
- 	
- 	
- 	
+ ex) 1~10 까지 덧셈  for() 	
+ int sum =0;
+  for("int i=1;i<=10;i++"){
+ 	sum +=i;
+ } 		
+ syso(sum);
+ 
+ex) 배열
+Scanner sc = new Scanner(System.in);
+ int[] ints = new int[3];	//ints[0]  ints[1]  ints[2]  // 배열갯수 ints.length =3 
+ 								// boolean [] booleans =new boolean[3];
+ 								// String strs = new String[3];	
+ 								// char chars = new char[3];
+ 	 	
+ for(int i=0; i<ints.length;i++){
+	syso(ints[i]);		// 배열 int형 초기값은 0, boolean형 초기값 false   
+ }	
+ 
+ 
+ int[] ints;	//선언
+ ints = new int[3]; //할당
+ 
+ 	//배열값을 바로 지정해도 된다
+  int[] ints = {10,20,30};	//ints[0]=10,   ints[1]=20,   ints[2]=30
+  
+  int[] ints;	//선언
+  ints = new int[]{10,20,30};
+ 
+	  int[] ints;	//선언
+  	  ints = {10,20,30};	//x 안됨.
+  	  
+  	  
+  
+  
+ 
+ 		
 	
 	
 
