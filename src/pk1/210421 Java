@@ -176,10 +176,10 @@ ex) 좌표(50,50)에서 좌표(100,100)사이에 현재 좌표가 들어있다면
  
 ex) 배열
 Scanner sc = new Scanner(System.in);
- int[] ints = new int[3];	//ints[0]  ints[1]  ints[2]  // 배열갯수 ints.length =3 
- 								// boolean [] booleans =new boolean[3];
- 								// String strs = new String[3];	
- 								// char chars = new char[3];
+   int[] ints = new int[3];	//ints[0]  ints[1]  ints[2]  // 배열갯수 ints.length =3 
+// boolean [] booleans = new boolean[3];
+// String[] strs = new String[3];	
+// char[] chars = new char[3];
  	 	
  for(int i=0; i<ints.length;i++){
 	syso(ints[i]);		// 배열 int형 초기값은 0, boolean형 초기값 false   
@@ -195,8 +195,9 @@ Scanner sc = new Scanner(System.in);
   int[] ints;	//선언
   ints = new int[]{10,20,30};
  
+ 
 	  int[] ints;	//선언
-  	  ints = {10,20,30};	//x 안됨.
+  	  ints = {10,20,30};	//x     선언을 따로 할경우, 중괄호만  안됨.
   	  
   	  
   
